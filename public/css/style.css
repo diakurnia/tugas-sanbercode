@@ -1,0 +1,55 @@
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+nav a {
+    float: right;
+    display: block;
+    color:blueviolet;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+nav a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+img {
+    width: 200px;
+}
+
+body {
+    background-image: url("pattern.jpg");
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+  }
+
+  p {
+    border-bottom: 3px solid grey;
+  }
+
+footer {
+  background-color: #339966;
+  -webkit-box-shadow: -1px 1px 15px 3px rgba(31,31,31,1);
+  -moz-box-shadow: -1px 1px 15px 3px rgba(31,31,31,1);
+  box-shadow: -1px 1px 15px 3px rgba(31,31,31,1);
+  padding: 0.5em;
+  color: white;
+  background-color: #323241;
+  clear: left;
+  text-align: center;
+}
