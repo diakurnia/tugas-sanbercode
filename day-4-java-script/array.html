@@ -36,7 +36,15 @@
             Hint: Gunakan properti length dari string untuk mencari tahu panjang string
         */
         // Code Kamu di sini
- 
+        const balikString = (word) => {
+            let newWord = ''
+            // return word.split('').reverse().join('')
+            // let reverseWord = ''
+            for ( let i = word.length-1; i >= 0; i--) {
+                newWord += word[i]
+            }
+            return newWord
+        }
         
         // Driver Code, jangan diganggu!
         var formBalikString = document.getElementById("balikString")
@@ -94,9 +102,18 @@
         
         // Code kamu di sini, lakukan looping terhadap input di atas
 
-
+        const dataHandling = (data) => {
+            let rincianData = ''
+            for ( let i = 0; i < data.length; i++){
+                    rincianData += `Nomor ID: ${data[i][0]} <br>
+                                    Nama Lengkap: ${data[i][1]} <br>
+                                    TTL: ${data[i][2]}, ${data[i][3]} <br>
+                                    Hobi: ${data[i][4]} <br><br><br>`   
+            }
+            return rincianData
+        }
         
-        var jawaban2 // =  Isikan outputnya di sini
+        var jawaban2 = dataHandling(input)// =  Isikan outputnya di sini
 
         document.getElementById("jawaban2").innerHTML = jawaban2  
 
